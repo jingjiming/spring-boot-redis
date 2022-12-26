@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-boot-lettuce
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: 1000ms
+      shutdown-timeout: 100ms
